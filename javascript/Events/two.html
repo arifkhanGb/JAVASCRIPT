@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript learing !!</h1>
+    <button id="stop">STOP</button>
+
+</body>
+
+<script>
+    const changeMe = function(){
+   document.querySelector("h1").innerHTML = "javascript series."
+    }
+
+    const changeText = setTimeout(changeMe,2000);
+
+   
+        document.getElementById('stop').addEventListener('click',()=>{
+            document.body.style.backgroundColor = "pink"
+        clearInterval(changeText);
+        
+        });
+   
+
+</script>
+</html>

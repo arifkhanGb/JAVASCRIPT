@@ -1,0 +1,15 @@
+.body{
+    margin: 0;
+    padding: auto;
+}
+#images{
+    border: 2px solid red;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    /* justify-content: center;
+    align-items: center ; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

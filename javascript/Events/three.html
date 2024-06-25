@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hello javascript</h2>
+    <button id="start">start</button>    
+    <button id="stop">stop</button>
+</body>
+<script>
+    let a = 1;
+    let intervalId ;
+    const func = function hello(){
+            console.log(a++);
+    }
+    // setInterval(() =>{
+    //     // console.log("hitesh", Date.now());
+    // }, 1000)
+
+  
+  document.querySelector('#start').addEventListener('click',() => {
+    intervalId = setInterval(func, 1000);
+  })
+  document.querySelector('#stop').addEventListener('click',() => {
+   clearInterval(intervalId);
+  })
+
+
+</script>
+</html>
